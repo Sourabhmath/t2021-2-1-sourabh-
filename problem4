@@ -1,0 +1,36 @@
+import java.util.*;
+public class ar {
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner (System.in);
+		System.out.println("enter the no elements of array 1");
+		int a = sc.nextInt();
+		int arr1[] = new int[a];
+		System.out.println("enter the no elements of array 2");
+		int b = sc.nextInt();
+		int arr2[]=  new int[b];
+		System.out.println("enter the  elements of array 1");
+		for(int i = 0;i<=arr1.length-1;i++)
+		{
+			arr1[i]= sc.nextInt();
+		}
+		System.out.println("enter the  elements of array 2");
+		for(int i = 0;i<=arr2.length-1;i++)
+		{
+			arr2[i]= sc.nextInt();
+		}
+		for(int i = 0;i<=arr1.length-1;i++)
+		{
+			int n=0;
+			for(int j = 0;j<=arr2.length-1;j++)
+			{
+				if(arr2[j]%arr1[i]==0)
+				{
+					n = n+1;
+				}
+			}
+			System.out.print(arr1[i]+":"+n+" ");
+		}
+		
+	}
+}
