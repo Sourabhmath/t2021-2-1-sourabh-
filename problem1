@@ -1,0 +1,36 @@
+import java.util.*;
+class calculator
+{
+  
+  double add(double a, double b)
+  {
+      return a+b;
+  }
+   double sub(double a, double b)
+  {
+      return a-b;
+  }
+   double mul(double a, double b)
+  {
+      return a*b;
+  }
+   double div(double a, double b)
+  {
+      return a/b;
+  }
+}
+
+class calculatorApp
+{
+    public static void main(String[]args)
+    {
+        Scanner scan = new Scanner(System.in);
+        calculator c = new  calculator();
+        double p = scan.nextDouble();
+        double q = scan.nextDouble();
+        System.out.println(c.add(p,q));
+        System.out.println(c.sub(p,q));
+        System.out.println(c.mul(p,q));
+        System.out.println(c.div(p,q));
+    }
+}
